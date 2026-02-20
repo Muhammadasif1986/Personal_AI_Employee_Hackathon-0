@@ -6,3 +6,19 @@
 2026-02-21 01:40:55,502 - IntegratedOrchestrator - ERROR - Failed to start approval_handler: [Errno 2] No such file or directory: 'python'
 2026-02-21 01:40:55,814 - IntegratedOrchestrator - ERROR - Failed to start scheduler: [Errno 2] No such file or directory: 'python'
 2026-02-21 01:40:55,818 - IntegratedOrchestrator - INFO - Started 0 processes
+2026-02-21 02:05:39,845 - IntegratedOrchestrator - INFO - Starting Integrated Orchestrator for Silver Tier...
+2026-02-21 02:05:39,906 - IntegratedOrchestrator - WARNING - Script email_watcher.py does not exist
+2026-02-21 02:05:39,907 - IntegratedOrchestrator - WARNING - Script whatsapp_watcher.py does not exist
+2026-02-21 02:05:39,908 - IntegratedOrchestrator - WARNING - Component linkedin_poster does not exist as a script
+2026-02-21 02:05:39,909 - IntegratedOrchestrator - WARNING - Component advanced_orchestrator does not exist as a script
+2026-02-21 02:05:39,910 - IntegratedOrchestrator - WARNING - Component approval_handler does not exist as a script
+2026-02-21 02:05:39,911 - IntegratedOrchestrator - WARNING - Component scheduler does not exist as a script
+2026-02-21 02:05:39,911 - IntegratedOrchestrator - INFO - Started 0 processes
+2026-02-21 02:06:11,243 - IntegratedOrchestrator - INFO - Starting Integrated Orchestrator for Silver Tier...
+2026-02-21 02:06:11,244 - IntegratedOrchestrator - WARNING - Script email_watcher.py does not exist
+2026-02-21 02:06:11,245 - IntegratedOrchestrator - WARNING - Script whatsapp_watcher.py does not exist
+2026-02-21 02:06:11,246 - IntegratedOrchestrator - WARNING - Component linkedin_poster does not exist as a script
+2026-02-21 02:06:11,247 - IntegratedOrchestrator - WARNING - Component advanced_orchestrator does not exist as a script
+2026-02-21 02:06:11,248 - IntegratedOrchestrator - WARNING - Component approval_handler does not exist as a script
+2026-02-21 02:06:11,250 - IntegratedOrchestrator - WARNING - Component scheduler does not exist as a script
+2026-02-21 02:06:11,252 - IntegratedOrchestrator - INFO - Started 0 processes
