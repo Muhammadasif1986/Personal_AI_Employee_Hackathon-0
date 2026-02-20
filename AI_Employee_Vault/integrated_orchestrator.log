@@ -22,3 +22,31 @@
 2026-02-21 02:06:11,248 - IntegratedOrchestrator - WARNING - Component approval_handler does not exist as a script
 2026-02-21 02:06:11,250 - IntegratedOrchestrator - WARNING - Component scheduler does not exist as a script
 2026-02-21 02:06:11,252 - IntegratedOrchestrator - INFO - Started 0 processes
+2026-02-21 02:11:28,582 - IntegratedOrchestrator - INFO - Starting Integrated Orchestrator for Silver Tier...
+2026-02-21 02:11:28,588 - IntegratedOrchestrator - ERROR - Failed to start email_watcher.py: [Errno 2] No such file or directory: 'python'
+2026-02-21 02:11:28,593 - IntegratedOrchestrator - ERROR - Failed to start whatsapp_watcher.py: [Errno 2] No such file or directory: 'python'
+2026-02-21 02:11:28,597 - IntegratedOrchestrator - ERROR - Failed to start linkedin_poster: [Errno 2] No such file or directory: 'python'
+2026-02-21 02:11:28,602 - IntegratedOrchestrator - ERROR - Failed to start advanced_orchestrator: [Errno 2] No such file or directory: 'python'
+2026-02-21 02:11:28,605 - IntegratedOrchestrator - ERROR - Failed to start approval_handler: [Errno 2] No such file or directory: 'python'
+2026-02-21 02:11:28,608 - IntegratedOrchestrator - ERROR - Failed to start scheduler: [Errno 2] No such file or directory: 'python'
+2026-02-21 02:11:28,610 - IntegratedOrchestrator - INFO - Started 0 processes
+2026-02-21 02:12:10,910 - IntegratedOrchestrator - INFO - Starting Integrated Orchestrator for Silver Tier...
+2026-02-21 02:12:10,917 - IntegratedOrchestrator - INFO - Started email_watcher.py with PID 29156
+2026-02-21 02:12:10,932 - IntegratedOrchestrator - INFO - Started whatsapp_watcher.py with PID 29157
+2026-02-21 02:12:10,941 - IntegratedOrchestrator - INFO - Started linkedin_poster with PID 29158
+2026-02-21 02:12:11,036 - IntegratedOrchestrator - INFO - Started advanced_orchestrator with PID 29159
+2026-02-21 02:12:11,057 - IntegratedOrchestrator - INFO - Started approval_handler with PID 29160
+2026-02-21 02:12:11,077 - IntegratedOrchestrator - INFO - Started scheduler with PID 29161
+2026-02-21 02:12:11,078 - IntegratedOrchestrator - INFO - Started 6 processes
+2026-02-21 02:12:11,079 - IntegratedOrchestrator - WARNING - Process 29156 has died, restarting...
+2026-02-21 02:12:11,086 - IntegratedOrchestrator - INFO - Started email_watcher.py with PID 29162
+2026-02-21 02:12:11,090 - IntegratedOrchestrator - WARNING - Process 29157 has died, restarting...
+2026-02-21 02:12:11,100 - IntegratedOrchestrator - INFO - Started whatsapp_watcher.py with PID 29163
+2026-02-21 02:12:11,103 - IntegratedOrchestrator - WARNING - Process 29158 has died, restarting...
+2026-02-21 02:12:11,123 - IntegratedOrchestrator - INFO - Started linkedin_poster with PID 29164
+2026-02-21 02:12:11,123 - IntegratedOrchestrator - WARNING - Process 29159 has died, restarting...
+2026-02-21 02:12:11,146 - IntegratedOrchestrator - INFO - Started advanced_orchestrator with PID 29165
+2026-02-21 02:12:11,160 - IntegratedOrchestrator - WARNING - Process 29160 has died, restarting...
+2026-02-21 02:12:11,179 - IntegratedOrchestrator - INFO - Started approval_handler with PID 29166
+2026-02-21 02:12:11,182 - IntegratedOrchestrator - WARNING - Process 29161 has died, restarting...
+2026-02-21 02:12:11,209 - IntegratedOrchestrator - INFO - Started scheduler with PID 29167

@@ -9,7 +9,7 @@ Silver Tier features are now active: Multi-channel monitoring, LinkedIn posting,
 - Active Projects: 0
 - Pending Actions: 0
 - Completed Today: 0
-- Active Processes: 0
+- Active Processes: 6
 - Watchers Running: 0
 - LinkedIn Posts This Week: 0
 - Emails Processed: 0
@@ -54,8 +54,8 @@ Silver Tier features are now active: Multi-channel monitoring, LinkedIn posting,
 - Monthly financial review: First of next month
 
 ## System Status
-- Active Processes: 0
-- Last Updated: 2026-02-21T02:06:11.266666
+- Active Processes: 6
+- Last Updated: 2026-02-21T02:12:11.290895
 - Silver Tier Features Active
 ## Approval Queue
 - Pending approvals: 0

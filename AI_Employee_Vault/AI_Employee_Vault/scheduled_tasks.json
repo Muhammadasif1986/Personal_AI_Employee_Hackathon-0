@@ -1,0 +1,42 @@
+[
+  {
+    "id": "task_1771621933_daily",
+    "name": "Daily Business Briefing",
+    "schedule": "0 8 * * *",
+    "type": "create_file",
+    "details": {
+      "description": "Generate daily business briefing",
+      "action_required": "Create daily business summary and metrics report"
+    },
+    "enabled": true,
+    "created": "2026-02-21T02:12:13.527408",
+    "last_run": "2026-02-21T02:12:13.777283"
+  },
+  {
+    "id": "task_1771621933_weekly",
+    "name": "Weekly LinkedIn Post",
+    "schedule": "0 10 * * 1",
+    "type": "post_to_linkedin",
+    "details": {
+      "content": "Weekly business update and insights from our team.",
+      "audience": "Business professionals",
+      "hashtags": "#business #insights #weeklyupdate"
+    },
+    "enabled": true,
+    "created": "2026-02-21T02:12:13.527480",
+    "last_run": "2026-02-21T02:12:15.966529"
+  },
+  {
+    "id": "task_1771621933_monthly",
+    "name": "Monthly Financial Review",
+    "schedule": "0 9 1 * *",
+    "type": "create_file",
+    "details": {
+      "description": "Review monthly financials",
+      "action_required": "Analyze financial performance and create summary report"
+    },
+    "enabled": true,
+    "created": "2026-02-21T02:12:13.527488",
+    "last_run": "2026-02-21T02:12:13.840380"
+  }
+]

@@ -48,7 +48,8 @@ class IntegratedOrchestrator:
         if script_path.exists():
             try:
                 # Start the watcher as a background process
-                process = subprocess.Popen(['python', str(script_path)])
+                # Use python3 instead of python for compatibility
+                process = subprocess.Popen(['python3', str(script_path)])
                 self.logger.info(f"Started {script_name} with PID {process.pid}")
                 return process
             except Exception as e:
@@ -71,7 +72,8 @@ class IntegratedOrchestrator:
                     self.logger.info(f"Prepared {script_name} for MCP integration")
                     return True
                 else:
-                    process = subprocess.Popen(['python', str(script_path)])
+                    # Use python3 instead of python for compatibility
+                    process = subprocess.Popen(['python3', str(script_path)])
                     self.logger.info(f"Started {component_name} with PID {process.pid}")
                     return process
             except Exception as e:
