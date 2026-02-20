@@ -1,0 +1,8 @@
+2026-02-21 01:40:55,444 - IntegratedOrchestrator - INFO - Starting Integrated Orchestrator for Silver Tier...
+2026-02-21 01:40:55,472 - IntegratedOrchestrator - ERROR - Failed to start email_watcher.py: [Errno 2] No such file or directory: 'python'
+2026-02-21 01:40:55,475 - IntegratedOrchestrator - ERROR - Failed to start whatsapp_watcher.py: [Errno 2] No such file or directory: 'python'
+2026-02-21 01:40:55,480 - IntegratedOrchestrator - ERROR - Failed to start linkedin_poster: [Errno 2] No such file or directory: 'python'
+2026-02-21 01:40:55,486 - IntegratedOrchestrator - ERROR - Failed to start advanced_orchestrator: [Errno 2] No such file or directory: 'python'
+2026-02-21 01:40:55,502 - IntegratedOrchestrator - ERROR - Failed to start approval_handler: [Errno 2] No such file or directory: 'python'
+2026-02-21 01:40:55,814 - IntegratedOrchestrator - ERROR - Failed to start scheduler: [Errno 2] No such file or directory: 'python'
+2026-02-21 01:40:55,818 - IntegratedOrchestrator - INFO - Started 0 processes
