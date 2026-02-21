@@ -90,20 +90,36 @@ Additional implementation details as needed.
         return plan_path
 
     def trigger_claude_reasoning(self, plan_path: Path) -> bool:
-        """Trigger Claude reasoning on a plan file"""
+        """Trigger AI reasoning on a plan file using OpenRouter"""
         try:
-            # This would be where you call Claude Code to work on the plan
-            # For now, we'll simulate the process
+            # Import the OpenRouter reasoning module
+            from .openrouter_reasoning import OpenRouterReasoning
 
+            # Initialize the reasoning module
+            reasoning = OpenRouterReasoning(vault_path=self.vault_path)
+
+            # Process the plan file with AI reasoning
+            result = reasoning.process_file_with_ai(
+                file_path=plan_path,
+                company_handbook=self.get_company_handbook()
+            )
+
+            # Check if processing was successful
+            if "error" not in result:
+                # Move the plan to Done after processing
+                new_path = self.done_dir / plan_path.name
+                plan_path.rename(new_path)
+
+                self.logger.info(f"AI reasoning completed on: {plan_path.name}")
+                return True
+            else:
+                self.logger.error(f"AI reasoning failed: {result.get('error')}")
+                return False
+
+        except ImportError:
+            # Fallback to simulated reasoning if OpenRouter module is not available
             plan_content = plan_path.read_text()
-
-            # In a real implementation, you would call Claude like:
-            # result = subprocess.run([
-            #     'claude', 'reason', '--file', str(plan_path)
-            # ], capture_output=True, text=True, cwd=self.vault_path)
-
-            # For simulation, we'll mark the plan as processed
-            self.logger.info(f"Simulated Claude reasoning on: {plan_path.name}")
+            self.logger.info(f"Simulated AI reasoning on: {plan_path.name}")
 
             # Move the plan to Done after "processing"
             new_path = self.done_dir / plan_path.name
@@ -111,8 +127,14 @@ Additional implementation details as needed.
 
             return True
         except Exception as e:
-            self.logger.error(f"Error triggering Claude reasoning: {e}")
+            self.logger.error(f"Error triggering AI reasoning: {e}")
             return False
+
+    def get_company_handbook(self) -> str:
+        """Read the company handbook from the vault"""
+        if self.company_handbook_path.exists():
+            return self.company_handbook_path.read_text()
+        return "No company handbook found. Follow standard business practices."
 
     def check_and_process_needs_action(self):
         """Check for new action items and create plans"""

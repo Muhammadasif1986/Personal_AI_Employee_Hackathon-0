@@ -1,0 +1,27 @@
+{
+  "timestamp": "2026-02-21T19:47:12.073178",
+  "report_type": "health_report",
+  "cloud_agent": {
+    "status": "offline",
+    "timestamp": "2026-02-21T19:47:12.076863",
+    "agent_type": "cloud"
+  },
+  "local_agent": {
+    "status": "offline",
+    "timestamp": "2026-02-21T19:47:12.080103",
+    "agent_type": "local"
+  },
+  "system_resources": {
+    "timestamp": "2026-02-21T19:47:12.085945",
+    "status": "ok",
+    "note": "psutil not available, basic monitoring only"
+  },
+  "sync_status": {
+    "timestamp": "2026-02-21T19:47:12.086062",
+    "overall_status": "unknown",
+    "last_sync": "never",
+    "conflicts": 0,
+    "items_queued": 0
+  },
+  "overall_status": "degraded"
+}

@@ -1,0 +1,8 @@
+2026-02-21 22:51:37,061 - OpenRouterReasoning - INFO - OpenRouter API initialized with model: anthropic/claude-3.5-sonnet
+2026-02-21 22:51:39,177 - OpenRouterReasoning - ERROR - Error in task analysis: OpenRouter API error: 402 - {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 8192 tokens, but can only afford 1333. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account","code":402,"metadata":{"provider_name":null}},"user_id":"user_38LmNpGWMShPLQF72slCB0OvHLX"}
+2026-02-21 22:53:05,466 - OpenRouterReasoning - INFO - OpenRouter API initialized with model: anthropic/claude-3.5-sonnet
+2026-02-21 22:53:06,834 - OpenRouterReasoning - ERROR - Error in task analysis: OpenRouter API error: 402 - {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 8192 tokens, but can only afford 1333. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account","code":402,"metadata":{"provider_name":null}},"user_id":"user_38LmNpGWMShPLQF72slCB0OvHLX"}
+2026-02-21 22:54:37,620 - OpenRouterReasoning - INFO - OpenRouter API initialized with model: anthropic/claude-3.5-sonnet
+2026-02-21 22:54:49,718 - OpenRouterReasoning - INFO - Task analysis completed for: Send a professional email to a client about projec...
+2026-02-21 22:55:36,373 - OpenRouterReasoning - INFO - OpenRouter API initialized with model: anthropic/claude-3.5-sonnet
+2026-02-21 22:55:47,795 - OpenRouterReasoning - INFO - Task analysis completed for: Send a professional email to a client about projec...

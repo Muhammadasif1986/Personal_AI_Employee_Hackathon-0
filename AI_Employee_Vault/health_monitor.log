@@ -1,0 +1,22 @@
+2026-02-21 19:47:12,070 - HealthMonitor - INFO - Health Monitor initialized
+2026-02-21 19:47:12,071 - HealthMonitor - INFO - Starting Health Monitor...
+2026-02-21 19:47:12,121 - HealthMonitor - INFO - Detected cloud agent offline - potential restart needed
+2026-02-21 19:47:12,152 - HealthMonitor - WARNING - Health alert generated: Cloud Agent Offline - The cloud agent has gone offline. Please check the system.
+2026-02-21 19:47:12,155 - HealthMonitor - INFO - Detected local agent offline - potential restart needed
+2026-02-21 19:47:12,167 - HealthMonitor - WARNING - Health alert generated: Local Agent Offline - The local agent has gone offline. Please check the system.
+2026-02-21 19:47:12,168 - HealthMonitor - INFO - Health check completed - Overall status: degraded
+2026-02-21 19:52:12,311 - HealthMonitor - INFO - Health check completed - Overall status: healthy
+2026-02-21 19:57:12,505 - HealthMonitor - INFO - Health check completed - Overall status: healthy
+2026-02-21 22:21:19,192 - HealthMonitor - INFO - Detected cloud agent offline - potential restart needed
+2026-02-21 22:21:19,272 - HealthMonitor - WARNING - Health alert generated: Cloud Agent Offline - The cloud agent has gone offline. Please check the system.
+2026-02-21 22:21:19,273 - HealthMonitor - INFO - Detected local agent offline - potential restart needed
+2026-02-21 22:21:19,293 - HealthMonitor - WARNING - Health alert generated: Local Agent Offline - The local agent has gone offline. Please check the system.
+2026-02-21 22:21:19,294 - HealthMonitor - INFO - Health check completed - Overall status: degraded
+2026-02-21 22:26:19,682 - HealthMonitor - INFO - Health check completed - Overall status: healthy
+2026-02-21 22:31:19,823 - HealthMonitor - INFO - Health check completed - Overall status: healthy
+2026-02-21 22:36:20,046 - HealthMonitor - INFO - Health check completed - Overall status: healthy
+2026-02-21 22:41:20,331 - HealthMonitor - INFO - Health check completed - Overall status: healthy
+2026-02-21 22:46:20,610 - HealthMonitor - INFO - Health check completed - Overall status: healthy
+2026-02-21 22:51:21,242 - HealthMonitor - INFO - Health check completed - Overall status: healthy
+2026-02-21 22:56:21,436 - HealthMonitor - INFO - Health check completed - Overall status: healthy
+2026-02-21 22:56:44,555 - HealthMonitor - INFO - Shutting down Health Monitor...

@@ -93,8 +93,90 @@ class CloudAgentOrchestrator:
                         subject_line = [line for line in content.split('\n') if 'subject:' in line.lower()]
                         subject = subject_line[0].split(': ')[1] if subject_line else "No Subject"
 
-                        # Generate draft reply (this would involve Claude reasoning in real implementation)
-                        draft_content = f"""---
+                        # Generate draft reply using OpenRouter AI reasoning
+                        try:
+                            from .openrouter_reasoning import OpenRouterReasoning
+                            reasoning = OpenRouterReasoning(vault_path=self.vault_path)
+
+                            system_message = f"""You are an AI employee drafting professional email replies.
+Create a polite, professional, and appropriate response based on the original email content.
+Keep the response concise and on-topic."""
+
+                            prompt = f"""Draft a professional email reply to the following email:
+
+From: {from_addr}
+Subject: {subject}
+Content: {content[:1000]}  # First 1000 characters of content
+
+Create a draft reply that is:
+1. Professional and courteous
+2. Addresses the main points of the original email
+3. Appropriate for the business context
+4. Concise and clear"""
+
+                            draft_reply = reasoning.openrouter.chat_completion(
+                                messages=[
+                                    {"role": "system", "content": system_message},
+                                    {"role": "user", "content": prompt}
+                                ],
+                                model=reasoning.model,
+                                max_tokens=300  # Lower token count to avoid credit issues
+                            )["choices"][0]["message"]["content"]
+
+                            draft_content = f"""---
+type: email_draft
+to: {from_addr}
+subject: Re: {subject}
+original_file: {email_file.name}
+status: pending_approval
+---
+
+## Draft Reply to: {from_addr}
+
+### Original Message: {subject}
+
+[Original message content would go here]
+
+### Draft Reply:
+{draft_reply}
+
+---
+**IMPORTANT**: This draft requires local approval before sending.
+Move to /Approved/Cloud_Agent to approve or /Rejected/Cloud_Agent to reject.
+"""
+                        except ImportError:
+                            # Fallback to default draft if OpenRouter module is not available
+                            self.logger.warning("OpenRouter module not available, using default draft")
+                            draft_content = f"""---
+type: email_draft
+to: {from_addr}
+subject: Re: {subject}
+original_file: {email_file.name}
+status: pending_approval
+---
+
+## Draft Reply to: {from_addr}
+
+### Original Message: {subject}
+
+[Original message content would go here]
+
+### Draft Reply:
+Dear {from_addr},
+
+Thank you for your email regarding "{subject}". I'm currently reviewing your request and will get back to you shortly.
+
+Best regards,
+AI Employee
+
+---
+**IMPORTANT**: This draft requires local approval before sending.
+Move to /Approved/Cloud_Agent to approve or /Rejected/Cloud_Agent to reject.
+"""
+                        except Exception as e:
+                            self.logger.error(f"Error generating email draft with AI: {e}")
+                            # Fallback to default draft
+                            draft_content = f"""---
 type: email_draft
 to: {from_addr}
 subject: Re: {subject}

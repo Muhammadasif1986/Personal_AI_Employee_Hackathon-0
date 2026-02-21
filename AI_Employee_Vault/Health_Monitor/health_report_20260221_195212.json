@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-02-21T19:52:12.269872",
+  "report_type": "health_report",
+  "cloud_agent": {
+    "timestamp": "2026-02-21T19:47:12.659130",
+    "agent_type": "cloud",
+    "status": "healthy",
+    "local_online": true,
+    "active_processes": 0,
+    "last_processed": "2026-02-21T19:47:12.664325"
+  },
+  "local_agent": {
+    "timestamp": "2026-02-21T19:47:12.329347",
+    "agent_type": "local",
+    "status": "healthy",
+    "cloud_online": false,
+    "active_processes": 0,
+    "last_processed": "2026-02-21T19:47:12.330272"
+  },
+  "system_resources": {
+    "timestamp": "2026-02-21T19:52:12.290145",
+    "status": "ok",
+    "note": "psutil not available, basic monitoring only"
+  },
+  "sync_status": {
+    "timestamp": "2026-02-21T19:52:12.290230",
+    "overall_status": "completed",
+    "last_sync": "2026-02-21T19:49:43.480672",
+    "conflicts": 0,
+    "items_queued": 0
+  },
+  "overall_status": "healthy"
+}
